@@ -17,7 +17,7 @@ public class Pizza implements Serializable {
 	
 	@Id
 	@Column(nullable=false)
-	private int libelle;
+	private String libelle;
 	
 	@Column(nullable=false)
 	private float prix;
@@ -35,6 +35,14 @@ public class Pizza implements Serializable {
 
 	public void setPrix(float prix) {
 		this.prix = prix;
+	}
+	
+	public String getLibelle() {
+		return libelle;
+	}
+
+	public void setLibelle(String libelle) {
+		this.libelle = libelle;
 	}
 
 	public Set<Livraison> getLivraisons() {
