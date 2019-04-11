@@ -9,7 +9,6 @@ import javax.faces.event.ActionEvent;
 @ManagedBean
 @RequestScoped
 public class ManagedPizza {
-	private String title = "default";
 	private List<String> pizzaList; 
 	private String quantity;
 	private String client;
@@ -19,14 +18,6 @@ public class ManagedPizza {
 		System.out.println("well added {action works}");
 	}
 	
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
 	public List<String> getPizzaList() {
 		return pizzaList;
 	}

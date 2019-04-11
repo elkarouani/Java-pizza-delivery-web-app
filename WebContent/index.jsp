@@ -9,20 +9,20 @@
 </head>
 <body>
 <f:view>
+	<h:outputLabel>Nom Pizza :</h:outputLabel>
+	<h:selectOneMenu value="#{managedPizza.pizzaList}">
+		<f:selectItem itemLabel="Marguerita" itemValue="marguerita" />
+		<f:selectItem itemLabel="Marguerita" itemValue="marguerita" />
+		<f:selectItem itemLabel="Marguerita" itemValue="marguerita" />
+		<f:selectItem itemLabel="Marguerita" itemValue="marguerita" />
+	</h:selectOneMenu><br>
+	<h:outputLabel>Quantité : </h:outputLabel>
+	<h:inputText value="#{managedPizza.quantity}"/><br>
+	<h:outputLabel>Client :</h:outputLabel>
+	<h:inputText value="#{managedPizza.client}"/><br>
+	<h:outputLabel>Adresse :</h:outputLabel>
+	<h:inputText value="#{managedPizza.adresse}"/><br>
 	<h:form>
-		<h:outputLabel>Nom Pizza :</h:outputLabel>
-		<h:selectOneMenu value="#{managedPizza.pizzaList}">
-			<f:selectItem itemLabel="Marguerita" itemValue="marguerita" />
-			<f:selectItem itemLabel="Marguerita" itemValue="marguerita" />
-			<f:selectItem itemLabel="Marguerita" itemValue="marguerita" />
-			<f:selectItem itemLabel="Marguerita" itemValue="marguerita" />
-		</h:selectOneMenu><br>
-		<h:outputLabel>Quantité : </h:outputLabel>
-		<h:inputText value="#{managedPizza.quantity}"/><br>
-		<h:outputLabel>Client :</h:outputLabel>
-		<h:inputText value="#{managedPizza.client}"/><br>
-		<h:outputLabel>Adresse :</h:outputLabel>
-		<h:inputText value="#{managedPizza.adresse}"/><br>
 		<h:commandButton value="ajouter" actionListener="#{managedPizza.ajouter}"></h:commandButton>
 	</h:form>
 </f:view>
