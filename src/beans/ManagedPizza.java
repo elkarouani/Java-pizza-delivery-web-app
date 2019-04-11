@@ -1,6 +1,7 @@
 package beans;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
@@ -8,7 +9,7 @@ import javax.faces.event.ActionEvent;
 
 @ManagedBean
 @RequestScoped
-public class ManagedPizza {
+public class ManagedPizza implements ManagedPizzaInterface {
 	private List<String> pizzaList; 
 	private String quantity;
 	private String client;
@@ -48,5 +49,23 @@ public class ManagedPizza {
 
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
+	}
+
+	@Override
+	public void fillWithPizzaLibelle() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void ajouter() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Map<String, Integer> getLaPizzaPlusLivree() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
